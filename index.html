@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+        margin:20px;
+        font-family: Arial, sans-serif;
+    }
+    .product {
+        border:1px solid red;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+    }
+
+        </style>
+</head>
+<div id="product-container"></div>
+<script src="products.js"></script>
+
+<body>
+    <h1>Product List</h1>
+
+    <script src="script.js"></script>
+
+    <h1>User Information Form</h1>
+    <form id="user-form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" required></textarea><br><br>
+        
+        <button type="submit">Submit</button>
+        <p class="error" id="error-message"></p>
+    </form>
+
+    <div id="box" onclick="changeColor()">Click me to change color</div>
+    <button id="hover-button">Hover over me!</button>
+
+    <script src="styling.js"></script>
+
+    <div id="submitted-data"></div>
+
+    <script src="form.js"></script>
+
+</body>
+</html>
